@@ -13,6 +13,12 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=My+Soul&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="main.js"></script>
     </head>
     <body class="bod">
         <div class="wrapper">
@@ -23,9 +29,15 @@
                     </div>
                     <nav class="primary-navigation">
                         <ul class="nav-list">
-                            <li href="#about" class="nav-item">About</li>
-                            <li href="#gallery" class="nav-item">Gallery</li>
-                            <li href="#contact" class="nav-item">Contact</li>
+                            <li class="nav-item">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#performances">Performances</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -89,35 +101,35 @@
                     >
                         Stream Now
                     </button>
-                    <ul>
-                        <li>
-                            <a aria-label="facebook" href="#">
+                    <ul role="list" class="stream-list">
+                        <li class="stream-item">
+                            <a aria-label="YouTube Music" href="#">
                                 <svg class="social-icon">
                                     <use
-                                        xlink:href="images/social-icons.svg#icon-facebook"
+                                        xlink:href="svg/social-icons.svg#youtube_music_icon"
                                     ></use></svg
                             ></a>
                         </li>
-                        <li>
-                            <a aria-label="facebook" href="#">
+                        <li class="stream-item">
+                            <a aria-label="Spotify" href="#">
                                 <svg class="social-icon">
                                     <use
-                                        xlink:href="images/social-icons.svg#icon-facebook"
+                                        xlink:href="svg/social-icons.svg#spotify_icon"
                                     ></use></svg
                             ></a>
                         </li>
-                        <li>
-                            <a aria-label="facebook" href="#">
+                        <li class="stream-item">
+                            <a aria-label="iTunes" href="#">
                                 <svg class="social-icon">
                                     <use
-                                        xlink:href="images/social-icons.svg#icon-facebook"
+                                        xlink:href="svg/social-icons.svg#itunes_icon"
                                     ></use></svg
                             ></a>
                         </li>
                     </ul>
                 </div>
             </main>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container box-shadow">
                     <h2>About Marcus</h2>
                     <p>
@@ -163,10 +175,44 @@
                     </p>
                 </div>
             </section>
-            <section class="gallery">
-                <div class="container box-shadow"></div>
+            <section class="performances" id="performances">
+                <div class="container box-shadow">
+                    <h2>Performances</h2>
+                    <div class="video-player">
+                        <div class="video-player__playing">
+                            <div class="embed-container">
+                                <div id="player"></div>
+                            </div>
+                        </div>
+                        <div class="video-player__thumbs">
+                            <div
+                                data-video="kyC4N3e1QeA"
+                                class="video-thumb active"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/kyC4N3e1QeA/hqdefault.jpg"
+                                />
+                            </div>
+                            <div data-video="MlBd-BNbCBE" class="video-thumb">
+                                <img
+                                    src="https://img.youtube.com/vi/MlBd-BNbCBE/hqdefault.jpg"
+                                />
+                            </div>
+                            <div data-video="tY1A-nbBUDc" class="video-thumb">
+                                <img
+                                    src="https://img.youtube.com/vi/tY1A-nbBUDc/hqdefault.jpg"
+                                />
+                            </div>
+                            <div data-video="bB9XyNrKQls" class="video-thumb">
+                                <img
+                                    src="https://img.youtube.com/vi/bB9XyNrKQls/hqdefault.jpg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container box-shadow">
                     <h2>Contact Marcus</h2>
                     <p>Drop me a line when you can!</p>
