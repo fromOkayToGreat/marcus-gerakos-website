@@ -1,4 +1,6 @@
+const headerHeight = document.querySelector("header").offsetHeight;
 
+document.documentElement.style.setProperty("--scroll-padding", headerHeight + "px");
 
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
