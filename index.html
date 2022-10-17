@@ -20,14 +20,14 @@
         ></script>
         <script defer src="main.js"></script>
     </head>
-    <body>
+    <body class="bod">
         <div class="wrapper">
             <header class="box-shadow | primary-header full-bleed">
                 <div class="header-container">
                     <div class="signature-container">
                         <span class="signature">Marcus Gerakos</span>
                     </div>
-                    <nav class="primary-navigation">
+                    <!-- <nav class="primary-navigation">
                         <ul class="nav-list">
                             <li class="nav-item">
                                 <a href="#about">About</a>
@@ -39,6 +39,42 @@
                                 <a href="#contact">Contact</a>
                             </li>
                         </ul>
+                    </nav> -->
+                    <nav class="menu ">
+                        <input
+                            type="checkbox"
+                            class="nav-toggle"
+                            id="nav-toggle"
+                            name="nav-toggle"
+                        />
+                        <label for="nav-toggle" class="nav-toggle-label"
+                            ><div class="nav-burger"></div
+                        ></label>
+                        <div class="nav primary-navigation">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="https://www.ebay.com/str/gruntstyle/MEN/_i.html?store_cat=36755669016"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="https://www.ebay.com/str/gruntstyle/WOMEN/_i.html?store_cat=36755747016"
+                                        >Performances
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="https://www.ebay.com/str/gruntstyle/YOUTH/_i.html?store_cat=36755756016"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -86,66 +122,59 @@
                 </div>
                 <div class="box-shadow | what-is-new">
                     <h1>What's New 👇</h1>
-                    <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarmaladeskiesproject%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                        class="fb-iframe"
-                        title="Facebook Feed"
-                        width="340"
-                        height="400"
-                        style="border: none; overflow: hidden"
-                        scrolling="no"
-                        frameborder="0"
-                        allowfullscreen="true"
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    ></iframe>
-                    <button
-                        class="button box-shadow | display-sm-none display-md-inline-flex"
+                    <div
+                        class="fb-page"
+                        data-href="https://www.facebook.com/marmaladeskiesproject"
+                        data-tabs="timeline"
+                        data-width=""
+                        data-height=""
+                        data-small-header="true"
+                        data-adapt-container-width="false"
+                        data-hide-cover="false"
+                        data-show-facepile="false"
                     >
-                        Stream Now
-                    </button>
+                        <blockquote
+                            cite="https://www.facebook.com/marmaladeskiesproject"
+                            class="fb-xfbml-parse-ignore"
+                        >
+                            <a
+                                href="https://www.facebook.com/marmaladeskiesproject"
+                                >Marcus Gerakos</a
+                            >
+                        </blockquote>
+                    </div>
+                    <button class="stream-button box-shadow">Stream 👇</button>
                     <ul role="list" class="stream-list">
                         <li class="stream-item">
-                            <a
-                                aria-label="YouTube Music"
-                                href="https://music.youtube.com/channel/UCznaDkR6_xnrBEZ4hMiBZcw"
-                            >
-                                <img
-                                    class="stream-icon"
-                                    src="images/social-ytmusic-icon.png"
-                                    alt="YouTube Music"
-                                />YouTube Music
-                            </a>
+                            <a aria-label="YouTube Music" href="#">
+                                <svg class="social-icon">
+                                    <use
+                                        xlink:href="svg/social-icons.svg#youtube_music_icon"
+                                    ></use></svg
+                            ></a>
                         </li>
                         <li class="stream-item">
-                            <a
-                                aria-label="Spotify"
-                                href="https://open.spotify.com/artist/4f2xgoAdecqPRLEtFZ0RP9"
-                            >
-                                <img
-                                    class="stream-icon"
-                                    src="images/social-spotify-icon.png"
-                                    alt="Spotify"
-                                />Spotify
-                            </a>
+                            <a aria-label="Spotify" href="#">
+                                <svg class="social-icon">
+                                    <use
+                                        xlink:href="svg/social-icons.svg#spotify_icon"
+                                    ></use></svg
+                            ></a>
                         </li>
                         <li class="stream-item">
-                            <a
-                                aria-label="Apple Music"
-                                href="https://music.apple.com/us/artist/marcus-gerakos/340693797"
-                            >
-                                <img
-                                    class="stream-icon"
-                                    src="images/social-itunes-icon.png"
-                                    alt="Apple Music"
-                                />Apple Music
-                            </a>
+                            <a aria-label="iTunes" href="#">
+                                <svg class="social-icon">
+                                    <use
+                                        xlink:href="svg/social-icons.svg#itunes_icon"
+                                    ></use></svg
+                            ></a>
                         </li>
                     </ul>
                 </div>
             </main>
             <section class="about" id="about">
                 <div class="container box-shadow">
-                    <h2>About Marcus</h2>
+                    <h2>About Marcus 🎸</h2>
                     <p>
                         Since earning his bachelors' degree in music from the
                         University of California at Los Angeles in 1990, Marcus
@@ -203,26 +232,22 @@
                                 data-video="kyC4N3e1QeA"
                                 class="video-thumb active"
                             >
-                                <img
-                                    alt="Marcus Gerakos performing Caprice No. 1"
+                                <img alt="Marcus Gerakos performing Caprice No. 1"
                                     src="https://img.youtube.com/vi/kyC4N3e1QeA/hqdefault.jpg"
                                 />
                             </div>
                             <div data-video="MlBd-BNbCBE" class="video-thumb">
-                                <img
-                                    alt="Marcus Gerakos performing Caprice No. 3"
+                                <img alt="Marcus Gerakos performing Caprice No. 3"
                                     src="https://img.youtube.com/vi/MlBd-BNbCBE/hqdefault.jpg"
                                 />
                             </div>
                             <div data-video="tY1A-nbBUDc" class="video-thumb">
-                                <img
-                                    alt="Marcus Gerakos performing Tio Ludwig"
+                                <img alt="Marcus Gerakos performing Tio Ludwig"
                                     src="https://img.youtube.com/vi/tY1A-nbBUDc/hqdefault.jpg"
                                 />
                             </div>
                             <div data-video="bB9XyNrKQls" class="video-thumb">
-                                <img
-                                    alt="Marcus Gerakos performing I feel fine"
+                                <img alt="Marcus Gerakos performing I feel fine"
                                     src="https://img.youtube.com/vi/bB9XyNrKQls/hqdefault.jpg"
                                 />
                             </div>
@@ -233,7 +258,7 @@
             <section class="contact" id="contact">
                 <div class="container box-shadow">
                     <h2>Contact Marcus 📧</h2>
-                    <p>Drop me a line when you can!</p>
+                    <p>Drop me a line when you can! </p>
                     <a href="mailto:info@marcusgerakos.com"
                         >info@marcusgerakos.com</a
                     >
