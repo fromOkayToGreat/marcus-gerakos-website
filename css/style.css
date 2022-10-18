@@ -213,7 +213,7 @@ main {
   gap: var(--size-500);
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-600) var(--size-600);
+  padding: var(--size-600) 0;
   background-color: var(--clr-container-600);
 }
 
@@ -284,7 +284,7 @@ main {
 /* sections */
 
 .about {
-  width: clamp(300px, 80%, var(--content-width));
+  width: clamp(300px, 96%, var(--content-width));
   margin: auto;
   display: grid;
   align-items: center;
@@ -422,7 +422,7 @@ footer {
     url(../images/bg-1-1200.webp),
     url(../images/bg-2-1200.webp),
     url(../images/bg-3-1200.webp);
-    background-position: center 0px, center 1328px, center 2600px;
+    background-position: center -250px, center 900px, center 2100px;
   }
 
   .wrapper > *:not(:first-child) {
@@ -454,7 +454,7 @@ footer {
     url(../images/bg-1-800.webp),
     url(../images/bg-2-800.webp),
     url(../images/bg-3-800.webp);
-    background-position: center 0px, center 900px, center 1800px;
+    background-position: center 0px, center 990px, center 1990px;
   }
 
   .wrapper > *:not(:first-child) {
@@ -512,7 +512,7 @@ footer {
     }
 
   .what-is-new {
-    max-width: 400px;
+    max-width: 380px;
   }
 
   main {
@@ -521,5 +521,12 @@ footer {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
+  }
+
+  .about .container {
+    padding: 1rem;
+  }
+  .about h2 {
+    text-align: center;
   }
 }
