@@ -1,6 +1,9 @@
 const headerHeight = document.querySelector("header").offsetHeight;
 
-document.documentElement.style.setProperty("--scroll-padding", headerHeight + "px");
+document.documentElement.style.setProperty(
+    "--scroll-padding",
+    headerHeight + "px"
+);
 
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
@@ -30,10 +33,14 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+});
+
+
+$(".nav-list li a").on("click", function () {
     navbarLinks.classList.toggle("active");
 });

@@ -35,7 +35,7 @@
 
   --content-width: 1500px;
   --border-radius: 39px;
-  --scroll-padding: 100px;
+  --scroll-padding: 120px;
 
   --size-100: 0.25rem;
   --size-200: 0.5rem;
@@ -91,9 +91,9 @@ main {
   grid-template-columns: 1fr minmax(auto, var(--content-width)) 1fr;
   background-color: var(--clr-container-600);
   background-image:
-  url(../images/bg-1-1800.webp),
-  url(../images/bg-2-1800.webp),
-  url(../images/bg-3-1800.webp);
+  url(../images/bg-1-1800.jpg),
+  url(../images/bg-2-1800.jpg),
+  url(../images/bg-3-1800.jpg);
   background-repeat: repeat no-repeat, repeat no-repeat, repeat no-repeat;
   background-position: center 0px, center 1842px, center 3120px;
   color: var(--clr-content-400);
@@ -419,9 +419,9 @@ footer {
 
     grid-template-columns: 1fr;
     background-image:
-    url(../images/bg-1-1200.webp),
-    url(../images/bg-2-1200.webp),
-    url(../images/bg-3-1200.webp);
+    url(../images/bg-1-1200.jpg),
+    url(../images/bg-2-1200.jpg),
+    url(../images/bg-3-1200.jpg);
     background-position: center -250px, center 900px, center 2100px;
   }
 
@@ -451,9 +451,9 @@ footer {
   .wrapper {
     --fs-body: var(--fs-300);
     background-image:
-    url(../images/bg-1-800.webp),
-    url(../images/bg-2-800.webp),
-    url(../images/bg-3-800.webp);
+    url(../images/bg-1-800.jpg),
+    url(../images/bg-2-800.jpg),
+    url(../images/bg-3-800.jpg);
     background-position: center 0px, center 990px, center 1990px;
   }
 
