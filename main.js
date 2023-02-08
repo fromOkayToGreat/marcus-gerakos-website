@@ -40,7 +40,6 @@ toggleButton.addEventListener("click", () => {
     navbarLinks.classList.toggle("active");
 });
 
-
 $(".nav-list li a").on("click", function () {
     navbarLinks.classList.toggle("active");
 });
